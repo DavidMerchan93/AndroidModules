@@ -7,11 +7,5 @@ plugins {
 apply(from = "$rootDir/compose-module.gradle")
 
 android {
-    namespace = "com.davidmerchan.onboarding_presentation"
-}
-
-dependencies {
-    implementation(project(Modules.core))
-    implementation(project(Modules.coreUi))
-    implementation(project(Modules.onboardingDomain))
+    namespace = "com.davidmerchan.core_ui"
 }

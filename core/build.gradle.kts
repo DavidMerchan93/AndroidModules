@@ -4,7 +4,7 @@ plugins {
     alias(libs.plugins.org.jetbrains.kotlin.android)
 }
 
-apply(from="$rootDir/base-module.gradle")
+apply(from = "$rootDir/base-module.gradle")
 
 android {
     namespace = "com.davidmerchan.core"

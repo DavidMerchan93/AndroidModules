@@ -26,7 +26,7 @@ android {
             isMinifyEnabled = false
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
-                "proguard-rules.pro"
+                "proguard-rules.pro",
             )
         }
     }
@@ -41,7 +41,7 @@ android {
         compose = true
     }
     composeOptions {
-        kotlinCompilerExtensionVersion = "1.4.3"
+        kotlinCompilerExtensionVersion = Compose.composeCompilerVersion
     }
     packaging {
         resources {
@@ -51,6 +51,12 @@ android {
 }
 
 dependencies {
+
+    implementation(project(Modules.core))
+    implementation(project(Modules.coreUi))
+
+    implementation(project(Modules.onboardingDomain))
+    implementation(project(Modules.onboardingPresentation))
 
     implementation(libs.core.ktx)
     implementation(libs.lifecycle.runtime.ktx)
