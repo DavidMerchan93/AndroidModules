@@ -9,3 +9,8 @@ apply(from = "$rootDir/base-module.gradle")
 android {
     namespace = "com.davidmerchan.core"
 }
+dependencies {
+    implementation(libs.appcompat)
+    implementation(libs.material)
+    implementation(libs.constraintlayout)
+}
